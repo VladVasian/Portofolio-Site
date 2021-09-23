@@ -1,0 +1,74 @@
+@media screen and (max-width: 850px) {
+ 
+    .navlist {
+        display: none;
+    }
+    .container {
+        justify-content: space-between;
+    }
+    .brg-container{
+        display: flex;
+        padding: 10px;
+    }
+    .present .container {
+        background-size: cover;
+    }
+     .container-icons {
+        align-items: center;
+        margin: 10px;
+    } 
+
+
+    
+}
+
+@media screen and (max-width: 760px) {
+
+    .container-icons {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 1150px) {
+
+    .container-promotion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card:hover {
+        background-color: rgba(253, 253, 255, 0.774);
+        transition: all 0.5s ease-out;
+        box-shadow: 2px 4px 31px 8px rgba(214, 218, 226, 0.85);
+        transform: scale(1.05);
+
+    }
+    .grid-about h1{
+        margin-left: 40px;
+    }
+
+    .third-row p {
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
+
+    .grid-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me-container{
+        margin: 25px 0px 0px 25px;
+    }
+
+    .sec-row{
+        display: none;
+    }
+}
+
