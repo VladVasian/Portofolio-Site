@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 1500px;
+    height: 800px;
+    display: flex;
+}
+
+.hangman {
+    width: 500px;
+    height: 800px;
+}
+
+.word {
+    width: 1000px;
+    height: 800px;
+    display: flex;
+    font-size: 70px;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 50px;
+
+}
+
+.words {
+    width: 60px;
+}
+
+.words p {
+    height: 100px;
+    border-bottom: 5px solid black;
+}
+
+.suport {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 700px;
+    width: 400px;
+    border-left: 25px solid black;
+    border-top: 25px solid black;
+}
+
+
+.rope {
+    position: absolute;
+    top: 0px;
+    left: 195px;
+    height: 100px;
+    width: 7px;
+    background: black;
+    
+}
+
+.head {
+    position: absolute;
+    top: 60px;
+    left: 150px;
+    border: 50px solid black;
+    border-radius: 50%; 
+}
+
+.neck{
+    position: absolute;
+    top: 150px;
+    left: 193px;
+    height: 40px;
+    width: 15px;
+    background: black;
+}
+
+.body{
+    position: absolute;
+    top: 170px;
+    left: 186px;
+    height: 250px;
+    width: 30px;
+    background: black;
+}
+
+.lefthand{
+    position: absolute;
+    top: 190px;
+    left: 150px;
+    height: 100px;
+    width: 20px;
+    background: black;
+    transform: rotateZ(45deg);
+}
+
+.righthand{
+    position: absolute;
+    top: 190px;
+    left: 230px;
+    height: 100px;
+    width: 20px;
+    background: black;
+    transform: rotateZ(-45deg);
+}
+
+
+.leftleg{
+    position: absolute;
+    top: 380px;
+    left: 145px;
+    height: 150px;
+    width: 20px;
+    background: black;
+    transform: rotateZ(35deg);
+}
+
+.rightleg{
+    position: absolute;
+    top: 380px;
+    left: 230px;
+    height: 150px;
+    width: 20px;
+    background: black;
+    transform: rotateZ(-35deg);
+}
+
+
+
+
+
+.winning-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+}
+
+.winning-message button {
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .25em .5em;
+    cursor: pointer;
+}
+
+.winning-message button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.show{
+    display: flex;
+}
+
+.display-none{
+    display: none;
+}
+
+.start-btn {
+    width: 160px;
+    height: 50px;
+    margin: 30px;
+    background: rgb(77, 71, 71);
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background: rgb(150, 140, 140);
+    color: black;
+}
+
+.disabled {
+    pointer-events: none;
+    background: lightgrey;
+    color: rgb(160, 153, 153);
+}
+
+.keyboard {
+    width: 1000px;
+    height: 300px;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.animation {
+    animation: shake 0.5s infinite;
+}
+
+.keyboard button {
+    width: 70px;
+    height: 80px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.keyboard button:hover {
+    background-color: rgb(87, 85, 85);
+    color: white;
+}
+
+#restartButton {
+  
+    width: 250px;
+    height: 80px;
+    text-align: center;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }

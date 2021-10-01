@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+   
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img {
+    width: 400px;
+    height: 500px;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.halo {
+    width: 720px;
+    height: 500px;
+}
+
+.asc {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    transform-style: preserve-3d;
+    min-width: 50vh;
+    width: 20rem;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    padding: 0rem 5rem;
+}
+
+.circle {
+    width: 19rem;
+    height: 19rem;
+    background: linear-gradient(
+        to right,
+        rgba(49, 36, 36, 0.75),
+        rgba(193, 209, 224, 0.75)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+
+.h {
+    background: linear-gradient(
+        to right,
+        rgba(13, 41, 4, 0.75),
+        rgba(39, 105, 43, 0.75)
+    );
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h1{
+    font-size: 2rem;
+    transition: all 0.75s ease-out;
+    
+}
+
+.info h3{
+    font-size: 1.3rem;
+    padding: 1rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+
+.note{
+    display: flex;
+    justify-content: space-between;
+}
+
+.note button {
+    padding: 0.5rem 1.5rem;
+    margin: 10px 0px 10px 0px;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+    transition: all 0.75s ease-out;
+}
+
+button.active{
+    background: #585858;
+    color: white;
+}
+
+.details {
+    margin-top: 5rem;
+}
+
+.details button {
+    width: 200px;
+    padding: 1rem 0rem;
+    background: grey;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    transition: all 0.75s ease-out;
+}
+
+.details button:hover{
+    background: rgb(75, 69, 69);
+}
