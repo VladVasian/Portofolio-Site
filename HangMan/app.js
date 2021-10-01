@@ -66,7 +66,7 @@ function compareLetter(value) {
             word.childNodes[i + 8].firstChild.innerText = pressedKey;  
             value.currentTarget.classList.add('disabled');
             winCounter++;
-            break;  
+              
         }  else {
             counter++;
         }  
@@ -77,18 +77,15 @@ function compareLetter(value) {
         numberOfMembers++;
         //Animation
         animation();
-
-
-        
     }
 
     if (numberOfMembers == 8) {
-        result.firstChild.innerText = "You Lost";
+        result.childNodes[1].innerText = "You Lost";
         result.classList.add('show');
     }
 
     if (winCounter == charCuvantulIntrodus.length) {
-        result.firstChild.innerText = "You Won";
+        result.childNodes[1].innerText = "You Won";
         result.classList.add('show'); 
     }
 }
