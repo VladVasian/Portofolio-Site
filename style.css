@@ -84,7 +84,7 @@
 .clasa-test-2{
     display: flex !important;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -447,46 +447,20 @@ textarea {
 
 @keyframes slideInFromLeft {
     0% {
-        transform: translateX(-550%);
-    }
-
-    90% {
-        transform: translateX(20%);
-    }
-
-    99% {
-        transform: translateX(-20%);
-    }
-
-    100% {
-        transform:translateX(0%);
+        transform: translateX(-10%);
     }
 }
 
 @keyframes slideInFromRight {
     0% {
-        transform: translateX(500%);
+        transform: translateX(10%);
     }
 
-    90% {
-        transform: translateX(20%);
-    }
-
-    99% {
-        transform: translateX(-20%);
-    }
-
-    100% {
-        transform:translateX(0%)
-    }
 }
 
 @keyframes slideInFromTop {
     0% {
-        transform: translateY(-500%);
+        transform: translateY(10%);
     }
 
-    100% {
-        transform:translateX(0%)
-    }
 }
