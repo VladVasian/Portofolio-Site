@@ -17,6 +17,7 @@
     align-items: center;
     background-color: black;
     border-bottom: 1px solid white;
+    z-index: 2;
 }
 
 .navbar {
@@ -106,14 +107,6 @@ body {
 }
 
 
-.logo {
-    color: white;
-    font-size: 30px;
-    padding: 20px;
-    font-weight: bold;
-    letter-spacing: 5px;
-    user-select: none;
-}
 
 
 .logo:hover {
@@ -127,6 +120,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    margin-top: 35px;
     
 }
 
